@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <sim>
+    <description>Pipistrel Virus</description>
+    <author>Jon Ross (ZLSA)</author>
+    <status>alpha</status>
+
+    <model>
+      <path>Aircraft/pipistrel-virus/model/an2-model.xml</path>
+    </model>
+
+    <flight-model>yasim</flight-model>
+    <aero>an2</aero>
+    <startup>
+      <splash-texture>Aircraft/an2/splash.png</splash-texture>
+    </startup>
+
+    <flaps>
+      <setting>-0.4</setting>
+      <setting>0.0</setting>
+      <setting>0.5</setting>
+      <setting>1.0</setting>
+    </flaps>
+    
+    <virtual-cockpit archive="y">true</virtual-cockpit>
+    
+    <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+    
+    <view>
+      <name>Pilot view</name>
+      <internal archive="y">true</internal>
+      <config>
+        <x-offset-m archive="y">-0.45</x-offset-m>
+        <y-offset-m archive="y">0.9</y-offset-m>
+        <z-offset-m archive="y">-0.9</z-offset-m>
+        <pitch-offset-deg type="double">-15.0</pitch-offset-deg>
+      </config>
+    </view>
+
+    <sound>
+      <path archive="y">Aircraft/pipistrel-virus/sound/pipistrel-virus-sound.xml</path>
+    </sound>
+
+  </sim>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+	<level-gal_us>8</level-gal_us>
+      </tank>
+      <tank n="1">
+	<level-gal_us>8</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+  
+  <controls>
+    <engines>
+      <engine>
+	<propeller-pitch>0.0</propeller-pitch>
+      </engine>
+    </engines>
+  </controls>
+
+  <nasal>
+    <aircraft>
+      <file>Aircraft/pipistrel-virus/nasal/pipistrel-virus.nas</file>
+    </aircraft>
+  </nasal>
+
+</PropertyList>

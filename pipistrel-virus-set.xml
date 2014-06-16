@@ -11,7 +11,7 @@
     </model>
 
     <flight-model>yasim</flight-model>
-    <aero>pipistrel-virus</aero>
+    <aero>pipistrel-virus-yasim</aero>
     <startup>
       <splash-texture>Aircraft/pipistrel-virus/splash.png</splash-texture>
     </startup>

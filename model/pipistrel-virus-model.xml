@@ -14,7 +14,7 @@
     <type>spin</type>
     <object-name>prop slow</object-name>
     <property>engines/engine[0]/rpm</property>
-    <factor>-1</factor>
+    <factor>1</factor>
     <center>
       <x-m>3.01</x-m>
       <y-m>0</y-m>

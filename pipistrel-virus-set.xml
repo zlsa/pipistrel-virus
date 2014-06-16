@@ -12,8 +12,9 @@
 
     <flight-model>yasim</flight-model>
     <aero>pipistrel-virus-yasim</aero>
+
     <startup>
-      <splash-texture>Aircraft/pipistrel-virus/splash.png</splash-texture>
+<!--      <splash-texture>Aircraft/pipistrel-virus/splash.png</splash-texture>-->
     </startup>
 
     <flaps>
@@ -31,9 +32,9 @@
       <name>Pilot view</name>
       <internal archive="y">true</internal>
       <config>
-        <x-offset-m archive="y">-0.3</x-offset-m>
-        <y-offset-m archive="y">1</y-offset-m>
-        <z-offset-m archive="y">10</z-offset-m>
+        <x-offset-m>-0.3</x-offset-m>
+        <y-offset-m>1.2</y-offset-m>
+        <z-offset-m>1.24</z-offset-m>
         <pitch-offset-deg type="double">-5.0</pitch-offset-deg>
       </config>
     </view>
@@ -85,10 +86,10 @@
     </engines>
   </controls>
 
-  <nasal>
+<!--  <nasal>
     <aircraft>
       <file>Aircraft/pipistrel-virus/nasal/pipistrel-virus.nas</file>
     </aircraft>
-  </nasal>
+  </nasal>-->
 
 </PropertyList>

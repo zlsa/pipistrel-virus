@@ -35,7 +35,7 @@
     <flap0 start="0.0" end="1.0" lift="1.2" drag="1.2"/>
 
     <control-input axis="/controls/flight/flaps" control="FLAP0"/>
-    <control-input axis="/controls/flight/aileron_in" control="FLAP0" split="true"/>
+    <control-input axis="/controls/flight/aileron" control="FLAP0" split="true"/>
     <control-input axis="/controls/flight/aileron-trim" control="FLAP0" split="true"/>
 
     <control-output control="FLAP0" side="left"
@@ -51,7 +51,7 @@
 
     <flap0 start="0" end="1" lift="1.65" drag="1.2"/>
 
-    <control-input axis="/controls/flight/elevator_in" control="FLAP0"/>
+    <control-input axis="/controls/flight/elevator" control="FLAP0"/>
     <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
 
     <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
@@ -73,10 +73,10 @@
   </vstab>
 
   <propeller radius="0.83"
-	     cruise-speed="90" cruise-rpm="2700"
-             cruise-alt="2000" cruise-power="50"
+	     cruise-speed="90" cruise-rpm="2200"
+             cruise-alt="2000" cruise-power="70"
              takeoff-power="80" takeoff-rpm="2700"
-             x="3" y="0" z="0.11" mass="60" moment="4">
+             x="3" y="0" z="0.11" mass="60" moment="2">
 
     <piston-engine eng-rpm="5500" gear-ratio="0.44" alt="0" eng-power="80"
                    displacement="73" compression="9"/>
@@ -109,7 +109,7 @@
   <tank x="1.2" y="1.5" z="0.7" capacity="48"/> 
   <tank x="1.2" y="-1.5" z="0.7" capacity="48"/> 
 
-  <ballast x="-2.0" y="0" z="0" mass="100"/> <!-- cockpit -->
+  <ballast x="3.0" y="0" z="0" mass="200" /> <!-- cockpit -->
 
   <!-- pilot, copilot, baggage -->
   <weight x="1.3" y="0.3" z="0.2" mass-prop="/sim/weight[0]/weight-lb"/>

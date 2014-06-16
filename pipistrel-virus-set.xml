@@ -31,10 +31,10 @@
       <name>Pilot view</name>
       <internal archive="y">true</internal>
       <config>
-        <x-offset-m archive="y">-0.45</x-offset-m>
-        <y-offset-m archive="y">0.9</y-offset-m>
-        <z-offset-m archive="y">-0.9</z-offset-m>
-        <pitch-offset-deg type="double">-15.0</pitch-offset-deg>
+        <x-offset-m archive="y">-0.3</x-offset-m>
+        <y-offset-m archive="y">1</y-offset-m>
+        <z-offset-m archive="y">10</z-offset-m>
+        <pitch-offset-deg type="double">-5.0</pitch-offset-deg>
       </config>
     </view>
 
@@ -42,22 +42,44 @@
       <path archive="y">Aircraft/pipistrel-virus/sound/pipistrel-virus-sound.xml</path>
     </sound>
 
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>170</weight-lb>
+      <max-lb>200</max-lb>
+    </weight>
+
+    <weight n="1">
+      <name>Coilot</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>200</max-lb>
+    </weight>
+
+    <weight n="2">
+      <name>Baggage</name>
+      <weight-lb>10</weight-lb>
+      <max-lb>30</max-lb>
+    </weight>
+
   </sim>
 
   <consumables>
     <fuel>
       <tank n="0">
+        <name>Left wing</name>
 	<level-gal_us>7.9</level-gal_us>
+        <selected type="bool">true</selected>
       </tank>
       <tank n="1">
+        <name>Right wing</name>
 	<level-gal_us>7.9</level-gal_us>
+        <selected type="bool">true</selected>
       </tank>
     </fuel>
   </consumables>
   
   <controls>
     <engines>
-      <engine>
+      <engine n="0">
 	<propeller-pitch>0.0</propeller-pitch>
       </engine>
     </engines>

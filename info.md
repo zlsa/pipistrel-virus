@@ -1,4 +1,4 @@
-# Pipistrel Virus information
+# Specifications
 
 ## Weights
 
@@ -13,6 +13,9 @@ Vne: 134 kts
 Vfe: 70 kts (max speed with flaps extended)
 Vae: 86 kts (max speed with spoilers extended)
 
+Touchdown speed: 40 kts (42 kts with up to 15 kt crosswind)
+Nose maximum speed: 18 kts
+
 ## G load
 
 +4G
@@ -26,3 +29,16 @@ Vae: 86 kts (max speed with spoilers extended)
 ## Controls
 
 Flaps: -5, 0, 9, 18 degrees (plus aileron)
+
+## Engine
+
+Rotax 912UL (100 hp)
+
+# Procedures
+
+## Takeoff
+
+Flaps: full (18 degrees)
+Prop pitch: minimum (all the way in and to the left)
+
+

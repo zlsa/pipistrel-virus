@@ -34,7 +34,7 @@
       <config>
         <x-offset-m>-0.3</x-offset-m>
         <y-offset-m>1.2</y-offset-m>
-        <z-offset-m>1.24</z-offset-m>
+        <z-offset-m>-1.24</z-offset-m>
         <pitch-offset-deg type="double">-5.0</pitch-offset-deg>
       </config>
     </view>

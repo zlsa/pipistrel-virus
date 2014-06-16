@@ -1,11 +1,11 @@
 <airplane mass="1480">
 
-  <approach speed="40" aoa="3" fuel="0.2">
-    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.05"/>
+  <approach speed="40" aoa="2" fuel="0.2">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.5"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
     <control-setting axis="/controls/flight/flaps" value="1.0"/>
-    <solve-weight idx="0" weight="170"/>
-    <solve-weight idx="1" weight="170"/>
+    <solve-weight idx="0" weight="140"/>
+    <solve-weight idx="1" weight="140"/>
     <solve-weight idx="2" weight="115"/>
   </approach>
 
@@ -13,9 +13,9 @@
   <cruise speed="122" alt="1650" fuel="1.0">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.75"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
-    <control-setting axis="/controls/flight/flaps" value="-0.4"/>
-    <solve-weight idx="0" weight="170"/>
-    <solve-weight idx="1" weight="170"/>
+    <control-setting axis="/controls/flight/flaps" value="-0.2"/>
+    <solve-weight idx="0" weight="140"/>
+    <solve-weight idx="1" weight="140"/>
     <solve-weight idx="2" weight="15"/>
   </cruise>
 
@@ -32,7 +32,7 @@
 
     <stall aoa="15" width="2.0" peak="1.5"/>
 
-    <flap0 start="0.0" end="1.0" lift="1.2" drag="1.2"/>
+    <flap0 start="0.0" end="1.0" lift="1.1" drag="1.02"/>
 
     <control-input axis="/controls/flight/flaps" control="FLAP0"/>
     <control-input axis="/controls/flight/aileron" control="FLAP0" split="true"/>
@@ -73,12 +73,12 @@
   </vstab>
 
   <propeller radius="0.83"
-	     cruise-speed="110" cruise-rpm="1900"
-             cruise-alt="2000" cruise-power="60"
-             takeoff-power="80" takeoff-rpm="2700"
+	     cruise-speed="120" cruise-rpm="1900"
+             cruise-alt="1000" cruise-power="20"
+             takeoff-power="100" takeoff-rpm="2700"
              x="3" y="0" z="0.11" mass="60" moment="1">
 
-    <piston-engine eng-rpm="5500" gear-ratio="0.5" alt="1000" eng-power="80"
+    <piston-engine eng-rpm="5500" gear-ratio="2" alt="1000" eng-power="100"
                    displacement="73" compression="9"/>
 
     <actionpt x="3" y="0" z="0.11"/>

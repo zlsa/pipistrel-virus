@@ -7,13 +7,13 @@
     <status>alpha</status>
 
     <model>
-      <path>Aircraft/pipistrel-virus/model/an2-model.xml</path>
+      <path>Aircraft/pipistrel-virus/model/pipistrel-virus-model.xml</path>
     </model>
 
     <flight-model>yasim</flight-model>
-    <aero>an2</aero>
+    <aero>pipistrel-virus</aero>
     <startup>
-      <splash-texture>Aircraft/an2/splash.png</splash-texture>
+      <splash-texture>Aircraft/pipistrel-virus/splash.png</splash-texture>
     </startup>
 
     <flaps>
@@ -47,10 +47,10 @@
   <consumables>
     <fuel>
       <tank n="0">
-	<level-gal_us>8</level-gal_us>
+	<level-gal_us>7.9</level-gal_us>
       </tank>
       <tank n="1">
-	<level-gal_us>8</level-gal_us>
+	<level-gal_us>7.9</level-gal_us>
       </tank>
     </fuel>
   </consumables>

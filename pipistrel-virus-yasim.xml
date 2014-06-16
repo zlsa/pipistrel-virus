@@ -12,7 +12,7 @@
   <!-- Cruise configuration -->
   <cruise speed="122" alt="1650" fuel="1.0">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.75"/>
-    <control-setting axis="/controls/engines/engine[0]/mixture" value="0.6"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
     <control-setting axis="/controls/flight/flaps" value="-0.4"/>
     <solve-weight idx="0" weight="170"/>
     <solve-weight idx="1" weight="170"/>
@@ -73,12 +73,12 @@
   </vstab>
 
   <propeller radius="0.83"
-	     cruise-speed="90" cruise-rpm="2200"
-             cruise-alt="2000" cruise-power="70"
+	     cruise-speed="110" cruise-rpm="1900"
+             cruise-alt="2000" cruise-power="60"
              takeoff-power="80" takeoff-rpm="2700"
-             x="3" y="0" z="0.11" mass="60" moment="2">
+             x="3" y="0" z="0.11" mass="60" moment="1">
 
-    <piston-engine eng-rpm="5500" gear-ratio="0.44" alt="0" eng-power="80"
+    <piston-engine eng-rpm="5500" gear-ratio="0.5" alt="1000" eng-power="80"
                    displacement="73" compression="9"/>
 
     <actionpt x="3" y="0" z="0.11"/>
@@ -98,18 +98,18 @@
 
   <gear x="1.24" y="0.79" z="-0.94" compression="0.2"> <!-- left main -->
     <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
-    <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+    <control-input axis="/controls/gear/brake-parking" control="BRAKE" />
   </gear>
 
   <gear x="1.24" y="-0.79" z="-0.94" compression="0.2"> <!-- right main -->
     <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
-    <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+    <control-input axis="/controls/gear/brake-parking" control="BRAKE" />
   </gear>
 
   <tank x="1.2" y="1.5" z="0.7" capacity="48"/> 
   <tank x="1.2" y="-1.5" z="0.7" capacity="48"/> 
 
-  <ballast x="3.0" y="0" z="0" mass="200" /> <!-- cockpit -->
+  <ballast x="3.0" y="0" z="0" mass="100" /> <!-- cockpit -->
 
   <!-- pilot, copilot, baggage -->
   <weight x="1.3" y="0.3" z="0.2" mass-prop="/sim/weight[0]/weight-lb"/>

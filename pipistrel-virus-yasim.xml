@@ -75,10 +75,10 @@
   <propeller radius="0.83"
 	     cruise-speed="120" cruise-rpm="1900"
              cruise-alt="1000" cruise-power="20"
-             takeoff-power="100" takeoff-rpm="2700"
+             takeoff-power="95" takeoff-rpm="2600"
              x="3" y="0" z="0.11" mass="60" moment="1">
 
-    <piston-engine eng-rpm="5500" gear-ratio="2" alt="1000" eng-power="100"
+    <piston-engine eng-rpm="5500" gear-ratio="0.5" alt="10000" eng-power="100"
                    displacement="73" compression="9"/>
 
     <actionpt x="3" y="0" z="0.11"/>

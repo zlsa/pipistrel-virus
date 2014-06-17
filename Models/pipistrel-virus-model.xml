@@ -27,12 +27,25 @@
     </axis>
   </animation>
 
-  <!-- OUTSIDE CHROME -->
+  <!-- Windows -->
+
+  <!-- rembrandt... -->
 
   <effect>
-    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
-    <object-name>fuselage</object-name>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>window</object-name>
+    <object-name>left door window</object-name>
   </effect>
+
+  <!-- the chrome shader -->
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/pipistrel-virus/Models/glass.png</texture>
+    <object-name>window</object-name>
+    <object-name>left door window</object-name>
+  </animation>
 
   <animation>
     <type>rotate</type>

@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>pipistrel-virus.ac</path>
+
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-m>10000</max-m>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>prop slow</object-name>
+    <property>/engines/engine[0]/rpm</property>
+    <factor>-0.411</factor>
+    <center>
+      <x-m>3.01</x-m>
+      <y-m>0</y-m>
+      <z-m>0.113</z-m>
+    </center>
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+  <!-- OUTSIDE CHROME -->
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+  </effect>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>left main strut</object-name>
+    <object-name>left main wheel</object-name>
+    <object-name>left main fairing</object-name>
+    <property>/gear/gear[1]/compression-norm</property>
+   <interpolation>
+     <entry>
+       <ind>0</ind>
+       <dep>12</dep>
+     </entry>
+     <entry>
+       <ind>0.2</ind>
+       <dep>-12</dep>
+     </entry>
+   </interpolation>
+    <center>
+      <x-m>1.29</x-m>
+      <y-m>-0.35</y-m>
+      <z-m>-0.34</z-m>
+    </center>
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>right main strut</object-name>
+    <object-name>right main wheel</object-name>
+    <object-name>right main fairing</object-name>
+    <property>/gear/gear[2]/compression-norm</property>
+   <interpolation>
+     <entry>
+       <ind>0</ind>
+       <dep>-12</dep>
+     </entry>
+     <entry>
+       <ind>0.2</ind>
+       <dep>12</dep>
+     </entry>
+   </interpolation>
+    <center>
+      <x-m>1.29</x-m>
+      <y-m>0.35</y-m>
+      <z-m>-0.34</z-m>
+    </center>
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+</PropertyList>

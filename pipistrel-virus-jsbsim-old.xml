@@ -196,8 +196,8 @@ K:             0.023
         <y>   2.00 </y>
         <z>  -6.50 </z>
       </location>
-      <capacity unit="LBS">  73.43 </capacity>
-      <contents unit="LBS">  36.71 </contents>
+      <capacity unit="LBS">  55.00 </capacity>
+      <contents unit="LBS">  55.00 </contents>
     </tank>
 
     <tank type="FUEL" number="1">
@@ -206,8 +206,8 @@ K:             0.023
         <y>  -2.00 </y>
         <z>  -6.50 </z>
       </location>
-      <capacity unit="LBS">  73.43 </capacity>
-      <contents unit="LBS">  36.71 </contents>
+      <capacity unit="LBS">  55.00 </capacity>
+      <contents unit="LBS">  55.00 </contents>
     </tank>
 
   </propulsion>
@@ -464,7 +464,7 @@ K:             0.023
             <tableData>
               -1.57    1.500
               -0.26    0.016
-              0.00    0.012
+              0.00    0.002
               0.26    0.016
               1.57    1.500
             </tableData>
@@ -478,7 +478,7 @@ K:             0.023
           <property>aero/qbar-psf</property>
           <property>metrics/Sw-sqft</property>
           <property>aero/cl-squared</property>
-          <value>0.023</value>
+          <value>0.015</value>
         </product>
       </function>
 

@@ -7,7 +7,7 @@
     <status>alpha</status>
 
     <model>
-      <path>Aircraft/pipistrel-virus/model/pipistrel-virus-model.xml</path>
+      <path>Aircraft/pipistrel-virus/Models/pipistrel-virus-model.xml</path>
     </model>
 
     <!-- <flight-model>yasim</flight-model> -->

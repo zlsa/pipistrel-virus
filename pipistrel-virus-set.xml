@@ -10,8 +10,11 @@
       <path>Aircraft/pipistrel-virus/model/pipistrel-virus-model.xml</path>
     </model>
 
-    <flight-model>yasim</flight-model>
-    <aero>pipistrel-virus-yasim</aero>
+    <!-- <flight-model>yasim</flight-model> -->
+    <!-- <aero>pipistrel-virus-yasim</aero> -->
+
+    <flight-model>jsb</flight-model>
+    <aero>pipistrel-virus-jsbsim</aero>
 
     <startup>
 <!--      <splash-texture>Aircraft/pipistrel-virus/splash.png</splash-texture>-->
@@ -33,7 +36,7 @@
       <internal archive="y">true</internal>
       <config>
         <x-offset-m>-0.3</x-offset-m>
-        <y-offset-m>1.2</y-offset-m>
+        <y-offset-m>0.7</y-offset-m>
         <z-offset-m>-1.24</z-offset-m>
         <pitch-offset-deg type="double">-5.0</pitch-offset-deg>
       </config>

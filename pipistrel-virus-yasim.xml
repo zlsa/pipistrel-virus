@@ -1,7 +1,7 @@
-<airplane mass="1480">
+<airplane mass="626">
 
-  <approach speed="40" aoa="2" fuel="0.2">
-    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.5"/>
+  <approach speed="40" aoa="3" fuel="0.2">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="1"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
     <control-setting axis="/controls/flight/flaps" value="1.0"/>
     <solve-weight idx="0" weight="140"/>
@@ -11,9 +11,9 @@
 
   <!-- Cruise configuration -->
   <cruise speed="122" alt="1650" fuel="1.0">
-    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.75"/>
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.5"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
-    <control-setting axis="/controls/flight/flaps" value="-0.2"/>
+    <control-setting axis="/controls/flight/flaps" value="0.0"/>
     <solve-weight idx="0" weight="140"/>
     <solve-weight idx="1" weight="140"/>
     <solve-weight idx="2" weight="15"/>
@@ -27,7 +27,7 @@
   <fuselage ax="0.0" ay="0.0" az="0.0" bx="-2.6" by="0.0" bz="-0.25"
             width="0.39" taper="0.4" midpoint="0"/>
 
-  <wing x="1.1" y="0.5" z="0.65" length="5.5" taper="0.95"
+  <wing x="1.1" y="0.5" z="0.65" length="5.5" taper="0.95" incidence="1"
         chord="1.0" sweep="0" dihedral="1" camber="0.07">
 
     <stall aoa="15" width="2.0" peak="1.5"/>
@@ -47,9 +47,9 @@
   <hstab x="-2.8" y="0.00" z=".85" length="1.6" taper="0.4"
          chord="0.6" sweep="2">
 
-    <stall aoa="17" width="4" peak="1.5"/>
+    <stall aoa="12" width="1" peak="1.5"/>
 
-    <flap0 start="0" end="1" lift="1.65" drag="1.2"/>
+    <flap0 start="0" end="1" lift="1.4" drag="1.2"/>
 
     <control-input axis="/controls/flight/elevator" control="FLAP0"/>
     <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
@@ -73,12 +73,12 @@
   </vstab>
 
   <propeller radius="0.83"
-	     cruise-speed="120" cruise-rpm="1900"
-             cruise-alt="1000" cruise-power="20"
-             takeoff-power="95" takeoff-rpm="2600"
-             x="3" y="0" z="0.11" mass="60" moment="1">
+	     cruise-speed="120" cruise-rpm="2100"
+             cruise-alt="90000" cruise-power="90"
+             takeoff-power="95" takeoff-rpm="2300"
+             x="3" y="0" z="0.11" mass="60" moment="2">
 
-    <piston-engine eng-rpm="5500" gear-ratio="0.5" alt="10000" eng-power="100"
+    <piston-engine eng-rpm="5500" gear-ratio="0.5" alt="50" eng-power="100"
                    displacement="73" compression="9"/>
 
     <actionpt x="3" y="0" z="0.11"/>
@@ -109,7 +109,7 @@
   <tank x="1.2" y="1.5" z="0.7" capacity="48"/> 
   <tank x="1.2" y="-1.5" z="0.7" capacity="48"/> 
 
-  <ballast x="3.0" y="0" z="0" mass="100" /> <!-- cockpit -->
+  <ballast x="3.0" y="0" z="0" mass="200" /> <!-- cockpit -->
 
   <!-- pilot, copilot, baggage -->
   <weight x="1.3" y="0.3" z="0.2" mass-prop="/sim/weight[0]/weight-lb"/>

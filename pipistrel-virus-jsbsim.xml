@@ -8,7 +8,7 @@
     <author> Aeromatic v 0.95 </author>
     <filecreationdate>2014-06-17</filecreationdate>
     <version>$Revision: 1.15 $</version>
-    <description> Models a pipistrel-virus. </description>
+    <description>Pipistrel Virus motorglider</description>
   </fileheader>
 
   <!--
@@ -52,6 +52,11 @@ K:             0.04
       <y>   0.00 </y>
       <z>   0.00 </z>
     </location>
+    <location name="CG" unit="M">
+      <x>   1.2 </x>
+      <y>   0.00 </y>
+      <z>   1.90 </z>
+    </location>
     <location name="EYEPOINT" unit="IN">
       <x>  33.78 </x>
       <y> -18.00 </y>
@@ -76,7 +81,7 @@ K:             0.04
     </location>
     <pointmass name="Payload">
       <description> 219 LBS + full (147 LBS) fuel should bring model up to entered max weight</description>
-      <weight unit="LBS">    109.6 </weight>
+      <weight unit="LBS">    0 </weight>
       <location name="POINTMASS" unit="IN">
         <x> 124.73 </x>
         <y>   0.00 </y>
@@ -89,15 +94,15 @@ K:             0.04
 
     <contact type="BOGEY" name="LEFT_MAIN">
       <location unit="M">
-        <x>  -1.24 </x>
+        <x>   1.24 </x>
         <y>   0.79 </y>
         <z>  -0.94 </z>
       </location>
       <static_friction>  0.800 </static_friction>
       <dynamic_friction> 0.500 </dynamic_friction>
       <rolling_friction> 0.020 </rolling_friction>
-      <spring_coeff  unit="LBS/FT">         1000 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC">     500 </damping_coeff>
+      <spring_coeff  unit="LBS/FT">         100 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC">     400 </damping_coeff>
       <max_steer unit="DEG">20</max_steer>
       <brake_group>LEFT</brake_group>
       <retractable>0</retractable>
@@ -105,15 +110,15 @@ K:             0.04
 
     <contact type="BOGEY" name="RIGHT_MAIN">
       <location unit="M">
-        <x>  -1.24 </x>
+        <x>   1.24 </x>
         <y>  -0.79 </y>
         <z>  -0.94 </z>
       </location>
       <static_friction>  0.800 </static_friction>
       <dynamic_friction> 0.500 </dynamic_friction>
       <rolling_friction> 0.020 </rolling_friction>
-      <spring_coeff unit="LBS/FT">         1000 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC">    500 </damping_coeff>
+      <spring_coeff unit="LBS/FT">         120 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC">    400 </damping_coeff>
       <max_steer unit="DEG">0</max_steer>
       <brake_group>RIGHT</brake_group>
       <retractable>0</retractable>
@@ -121,7 +126,7 @@ K:             0.04
 
     <contact type="BOGEY" name="NOSE">
       <location unit="M">
-        <x>   2.69 </x>
+        <x>  -2.69 </x>
         <y>   0.00 </y>
         <z>  -0.92 </z>
       </location>
@@ -130,7 +135,7 @@ K:             0.04
       <rolling_friction> 0.040 </rolling_friction>
       <spring_coeff unit="LBS/FT">          500 </spring_coeff>
       <damping_coeff unit="LBS/FT/SEC">     100 </damping_coeff>
-      <max_steer unit="DEG">30</max_steer>
+      <max_steer unit="DEG">10</max_steer>
       <brake_group>NONE</brake_group>
       <retractable>0</retractable>
     </contact>

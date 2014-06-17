@@ -52,11 +52,6 @@ K:             0.04
       <y>   0.00 </y>
       <z>   0.00 </z>
     </location>
-    <location name="CG" unit="M">
-      <x>   10.2 </x>
-      <y>   0.00 </y>
-      <z>   0.90 </z>
-    </location>
     <location name="EYEPOINT" unit="IN">
       <x>  33.78 </x>
       <y> -18.00 </y>
@@ -74,10 +69,10 @@ K:             0.04
     <iyy unit="SLUG*FT2">       295 </iyy>
     <izz unit="SLUG*FT2">       839 </izz>
     <emptywt unit="LBS" >       626 </emptywt>
-    <location name="CG" unit="IN">
-      <x> 124.73 </x>
+    <location name="CG" unit="M">
+      <x>   3.3 </x>
       <y>   0.00 </y>
-      <z>  -6.50 </z>
+      <z>   0.2 </z>
     </location>
     <pointmass name="Payload">
       <description> 219 LBS + full (147 LBS) fuel should bring model up to entered max weight</description>
@@ -94,7 +89,7 @@ K:             0.04
 
     <contact type="BOGEY" name="LEFT_MAIN">
       <location unit="M">
-        <x>  -1.24 </x>
+        <x>   1.24 </x>
         <y>   0.79 </y>
         <z>  -0.94 </z>
       </location>
@@ -102,7 +97,7 @@ K:             0.04
       <dynamic_friction> 0.500 </dynamic_friction>
       <rolling_friction> 0.020 </rolling_friction>
       <spring_coeff  unit="LBS/FT">         100 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC">     100 </damping_coeff>
+      <damping_coeff unit="LBS/FT/SEC">     50 </damping_coeff>
       <max_steer unit="DEG">20</max_steer>
       <brake_group>LEFT</brake_group>
       <retractable>0</retractable>
@@ -110,7 +105,7 @@ K:             0.04
 
     <contact type="BOGEY" name="RIGHT_MAIN">
       <location unit="M">
-        <x>  -1.24 </x>
+        <x>   1.24 </x>
         <y>  -0.79 </y>
         <z>  -0.94 </z>
       </location>
@@ -118,7 +113,7 @@ K:             0.04
       <dynamic_friction> 0.500 </dynamic_friction>
       <rolling_friction> 0.020 </rolling_friction>
       <spring_coeff unit="LBS/FT">         100 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC">    100 </damping_coeff>
+      <damping_coeff unit="LBS/FT/SEC">    50 </damping_coeff>
       <max_steer unit="DEG">0</max_steer>
       <brake_group>RIGHT</brake_group>
       <retractable>0</retractable>

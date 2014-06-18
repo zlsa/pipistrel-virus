@@ -50,7 +50,7 @@ K:             0.04
     <location name="AERORP" unit="M">
       <x>   2.50 </x>
       <y>   0.00 </y>
-      <z>   0.00 </z>
+      <z>   1.00 </z>
     </location>
     <location name="EYEPOINT" unit="IN">
       <x>  33.78 </x>
@@ -60,7 +60,7 @@ K:             0.04
     <location name="VRP" unit="M">
       <x>0</x>
       <y>0</y>
-      <z>0</z>
+      <z>-1</z>
     </location>
   </metrics>
 
@@ -72,7 +72,7 @@ K:             0.04
     <location name="CG" unit="M">
       <x>   2.2 </x>
       <y>   0.0 </y>
-      <z>  -0.1 </z>
+      <z>   -1.0 </z>
     </location>
     <pointmass name="Payload">
       <description> 219 LBS + full (147 LBS) fuel should bring model up to entered max weight</description>
@@ -91,7 +91,7 @@ K:             0.04
       <location unit="M">
         <x>  -2.69 </x>
         <y>   0.00 </y>
-        <z>  -0.20 </z>
+        <z>   -0.80 </z>
       </location>
       <static_friction>  0.800 </static_friction>
       <dynamic_friction> 0.500 </dynamic_friction>
@@ -107,7 +107,7 @@ K:             0.04
       <location unit="M">
         <x>  -1.24 </x>
         <y>   0.79 </y>
-        <z>  -0.14 </z>
+        <z>  -1.94 </z>
       </location>
       <static_friction>  0.800 </static_friction>
       <dynamic_friction> 0.500 </dynamic_friction>
@@ -123,7 +123,7 @@ K:             0.04
       <location unit="M">
         <x>  -1.24 </x>
         <y>  -0.79 </y>
-        <z>  -0.14 </z>
+        <z>  -1.94 </z>
       </location>
       <static_friction>  0.800 </static_friction>
       <dynamic_friction> 0.500 </dynamic_friction>
@@ -132,22 +132,6 @@ K:             0.04
       <damping_coeff unit="LBS/FT/SEC">    100 </damping_coeff>
       <max_steer unit="DEG">0</max_steer>
       <brake_group>RIGHT</brake_group>
-      <retractable>0</retractable>
-    </contact>
-
-    <contact type="STRUCTURE" name="TAIL">
-      <location unit="M">
-        <x>   4.5 </x>
-        <y>   0.00 </y>
-        <z>  -1.80 </z>
-      </location>
-      <static_friction>  0.800 </static_friction>
-      <dynamic_friction> 0.500 </dynamic_friction>
-      <rolling_friction> 1.000 </rolling_friction>
-      <spring_coeff  unit="LBS/FT">         5000 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC">     50 </damping_coeff>
-      <max_steer unit="DEG">20</max_steer>
-      <brake_group>NONE</brake_group>
       <retractable>0</retractable>
     </contact>
 

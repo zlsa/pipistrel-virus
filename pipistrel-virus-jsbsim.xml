@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="http://jsbsim.sourceforge.net/JSBSim.xsl"?>
 <fdm_config name="pipistrel-virus" version="2.0" release="ALPHA"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -48,9 +48,9 @@ K:             0.04
     <vtailarea unit="FT2">    9.69 </vtailarea>
     <vtailarm  unit="FT" >   10.83 </vtailarm>
     <location name="AERORP" unit="M">
-      <x>   2.50 </x>
+      <x>   1.41 </x>
       <y>   0.00 </y>
-      <z>   1.00 </z>
+      <z>   0.67 </z>
     </location>
     <location name="EYEPOINT" unit="IN">
       <x>  33.78 </x>
@@ -60,27 +60,36 @@ K:             0.04
     <location name="VRP" unit="M">
       <x>0</x>
       <y>0</y>
-      <z>-1</z>
+      <z>0</z>
     </location>
   </metrics>
 
   <mass_balance>
-    <ixx unit="SLUG*FT2">       592 </ixx>
-    <iyy unit="SLUG*FT2">       295 </iyy>
-    <izz unit="SLUG*FT2">       839 </izz>
-    <emptywt unit="LBS" >       626 </emptywt>
+    <ixx unit="SLUG*FT2">592</ixx>
+    <iyy unit="SLUG*FT2">295</iyy>
+    <izz unit="SLUG*FT2">839</izz>
+    <emptywt unit="LBS" >626</emptywt>
     <location name="CG" unit="M">
-      <x>   2.2 </x>
-      <y>   0.0 </y>
-      <z>   -1.0 </z>
+      <x> 1.386</x>
+      <y> 0.0  </y>
+      <z>-0.05 </z>
     </location>
-    <pointmass name="Payload">
-      <description> 219 LBS + full (147 LBS) fuel should bring model up to entered max weight</description>
-      <weight unit="LBS">    0 </weight>
-      <location name="POINTMASS" unit="IN">
-        <x> 124.73 </x>
-        <y>   0.00 </y>
-        <z>  -6.50 </z>
+    <pointmass name="Pilot">
+      <description>Pilot</description>
+      <weight unit="LBS">180</weight>
+      <location name="POINTMASS" unit="M">
+        <x> 1.28</x>
+        <y> 0.20</y>
+        <z> 0.05</z>
+      </location>
+    </pointmass> 
+    <pointmass name="Coilot">
+      <description>Coilot</description>
+      <weight unit="LBS">0</weight>
+      <location name="POINTMASS" unit="M">
+        <x> 1.28</x>
+        <y>-0.20</y>
+        <z> 0.05</z>
       </location>
     </pointmass> 
   </mass_balance>

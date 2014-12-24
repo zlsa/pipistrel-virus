@@ -33,6 +33,17 @@
   </animation>
 
  <animation>
+   <type>select</type>
+   <object-name>prop slow</object-name>
+   <condition>
+     <less-than>
+       <property>engines/engine[0]/rpm</property>
+       <value>500</value>
+     </less-than>
+   </condition>
+ </animation>
+
+ <animation>
   <type>select</type>
   <object-name>prop fast</object-name>
   <condition>

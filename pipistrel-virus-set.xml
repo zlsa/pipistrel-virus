@@ -35,9 +35,9 @@
       <name>Pilot view</name>
       <internal archive="y">true</internal>
       <config>
-        <x-offset-m>-0.3</x-offset-m>
-        <y-offset-m>0.65</y-offset-m>
-        <z-offset-m>-1.24</z-offset-m>
+        <x-offset-m>-0.25</x-offset-m>
+        <y-offset-m>0.7</y-offset-m>
+        <z-offset-m>0.4</z-offset-m>
         <pitch-offset-deg type="double">-5.0</pitch-offset-deg>
       </config>
     </view>

@@ -3,6 +3,11 @@
 <PropertyList>
 
   <path>pipistrel-virus.ac</path>
+  
+  <offsets>
+    <heading-deg>-90</heading-deg>
+    <z-m>0.27</z-m>
+  </offsets>
 
   <animation>
     <type>range</type>
@@ -16,16 +21,64 @@
     <property>/engines/engine[0]/rpm</property>
     <factor>-0.411</factor>
     <center>
-      <x-m>3.01</x-m>
-      <y-m>0</y-m>
-      <z-m>0.113</z-m>
+      <x-m>0</x-m>
+      <y-m>-1.45</y-m>
+      <z-m>0</z-m>
     </center>
     <axis>
-      <x>1.0</x>
-      <y>0.0</y>
+      <x>0.0</x>
+      <y>1.0</y>
       <z>0.0</z>
     </axis>
   </animation>
+
+ <animation>
+   <type>select</type>
+   <object-name>prop slow</object-name>
+   <condition>
+     <less-than>
+       <property>engines/engine[0]/rpm</property>
+       <value>500</value>
+     </less-than>
+   </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>prop fast</object-name>
+  <condition>
+   <greater-than>
+    <property>engines/engine[0]/rpm</property>
+    <value>400</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+   <type>blend</type>
+   <object-name>prop fast</object-name>
+   <property>engines/engine[0]/rpm</property>
+   <factor>0.0002</factor>
+   <max>1.0</max>
+   <min>0.0</min>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>prop fast</object-name>
+   <property>engines/engine[0]/rpm</property>
+   <factor>-0.001</factor>
+   <center>
+     <x-m>0</x-m>
+     <y-m>-1.45</y-m>
+     <z-m>0</z-m>
+   </center>
+   <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+ </animation>
 
   <!-- Windows -->
 
@@ -64,13 +117,13 @@
      </entry>
    </interpolation>
     <center>
-      <x-m>1.29</x-m>
-      <y-m>-0.35</y-m>
-      <z-m>-0.34</z-m>
+      <x-m>0.35</x-m>
+      <y-m>0.269</y-m>
+      <z-m>-0.45</z-m>
     </center>
     <axis>
-      <x>1.0</x>
-      <y>0.0</y>
+      <x>0.0</x>
+      <y>1.0</y>
       <z>0.0</z>
     </axis>
   </animation>
@@ -92,13 +145,13 @@
      </entry>
    </interpolation>
     <center>
-      <x-m>1.29</x-m>
-      <y-m>0.35</y-m>
-      <z-m>-0.34</z-m>
+      <x-m>-0.35</x-m>
+      <y-m>0.269</y-m>
+      <z-m>-0.45</z-m>
     </center>
     <axis>
-      <x>1.0</x>
-      <y>0.0</y>
+      <x>0.0</x>
+      <y>1.0</y>
       <z>0.0</z>
     </axis>
   </animation>
